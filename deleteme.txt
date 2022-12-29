@@ -7,7 +7,7 @@ Accent: #354A54
 
 Font:
 
-Dosis
+Do
 
 
 

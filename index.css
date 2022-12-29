@@ -58,35 +58,24 @@ nav {
 
 main {
     height: 90vh;
-    background-image: url("images/typing.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.text-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5%;
+    background: #17b3e3;
 
 }
 
-.text-container > * {
-    padding: 15px;
+.left > * {
+    /* padding: 15px; */
     color: #fff;
 }
 
-.text-container h1 {
+.left h1 {
     font-size: 60px;
 }
 
-.text-container h2 {
+.left h2 {
     font-size: 45px;
 }
 
-.text-container h3 {
+.left h3 {
     font-size: 35px;
 }
 
@@ -96,5 +85,4 @@ main {
     display: block;
     width: fit-content;
     text-decoration: none;
-    margin-left: .9rem;
 }
