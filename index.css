@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+nav {
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
+    
+}
+
+.logo {
+    height: 10vh;
+}
+
+
+.logo img {
+    height: 100%;
+}
+
+.links ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.links li {
+    display: inline-block;
+}
+
+.links li a {
+    text-decoration: none;
+    line-height: 10vh;
+    padding: 0 7px;
+    color: #00345B;
+}
+
+.contact-btn {
+    padding: 10px 15px;
+    background-color: #17b3e3;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    height: 90vh;
+    background-image: url("images/typing.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+
+}
+
+.text-container > * {
+    padding: 15px;
+    color: #fff;
+}
+
+.text-container h1 {
+    font-size: 60px;
+}
+
+.text-container h2 {
+    font-size: 45px;
+}
+
+.text-container h3 {
+    font-size: 35px;
+}
+
+.btn {
+    padding: 12px 17px;
+    background-color: #00345B;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    margin-left: .9rem;
+}

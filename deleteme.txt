@@ -1,0 +1,17 @@
+Color Pallete:
+Dominant: #17b3e3
+
+Complimentary: #00345B
+
+Accent: #354A54
+
+Font:
+
+Dosis
+
+
+
+
+
+
+
