@@ -54,16 +54,20 @@ nav {
     margin: 0 10px;
     text-decoration: none;
     color: white;
+    border-radius: 5px;
 }
 
 main {
     height: 90vh;
     background: #17b3e3;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
 }
 
 .left > * {
-    /* padding: 15px; */
+    padding: 7px 0;
     color: #fff;
 }
 
@@ -85,4 +89,29 @@ main {
     display: block;
     width: fit-content;
     text-decoration: none;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.section1 {
+    background-color: #fff;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.section1 h1 {
+    color: #00345B;
+    text-align: center;
+    width: 100%;
+}
+
+.card-container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.paragraph-text p {
+    max-width: 600px;
 }
