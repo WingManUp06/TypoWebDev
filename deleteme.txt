@@ -5,13 +5,27 @@ Complimentary: #00345B
 
 Accent: #354A54
 
-Font:
+Font: Dosis
 
-Do
+Index:
 
+You need a website
 
+Some of our Work
 
+Why chose TypoWebDev
 
+Services we offer
+
+Contact Us form
+
+Frequently Asked Questions
+
+Web pages i need:
+Contact
+Testimonials
+Questions
+Case Studies
 
 
 

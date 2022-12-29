@@ -4,4 +4,6 @@ To do:
 
 2. Complete the index
 
-3. 
+3. Put the logo inside of an <a> tag
+
+4. Design the rest of the website
