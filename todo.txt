@@ -2,8 +2,12 @@ To do:
 
 1. Think about all the web pages i want to have
 
-2. Complete the index
+2. Make the form all one fraction
 
 3. Put the logo inside of an <a> tag
 
 4. Design the rest of the website
+
+5. Fix the respondsive Navbar
+
+6. Create Web Pages
