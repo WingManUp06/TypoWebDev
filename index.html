@@ -8,28 +8,42 @@
     <link rel="icon" href="images\TWDicon.png">
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/95d3fa4963.js" crossorigin="anonymous"></script>
+    <script src="index.js" defer></script>
+    
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="images\TypoWebDev.png" alt="Typo Web Development">
-        </div>
-        <div class="links">
-            <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Solutions</a></li>
-                <li><a href="#">Industries</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-            <a href="#" class="contact-btn">Contact</a>
-        </div>
-        <div class="burgers" id="burgerBars">
+    <header>
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="/images/TypoWebDev.png" alt=""/>
+          </a>
+          <ul class="nav-menu">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Solutions</a>
+            </li>
+            <li class="nav-item">
+              <a href="order.html" class="nav-link">Industries</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item button">
+              <a href="#" class="nav-link contact-btn">Contact</a>
+            </li>
+          </ul>
+          <div class="hamburger">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </div>
-    </nav>
+          </div>
+        </nav>
+      </header>
     <main>
         <div class="left">
             <h1>Web Development Solutions</h1>
@@ -169,6 +183,7 @@
             </div>
         </div>
     </div>
+    <!-- INQUIRIES -->
     <div class="inquire-container">
         <h2>Tell Us How We Can Help</h2>
         <h5>Fill Out and send this form. Our Sales team will contact promptly</h5>
@@ -229,6 +244,5 @@
         </div>
         <h4>2022 Typo Web Development - Web App Developers. All Rights Reserved.</h4>
     </footer>
-    <script src="index.js" defer></script>
 </body>
 </html>
