@@ -396,6 +396,10 @@ main {
     width: 100%;
 }
 
+.add-border {
+    border-radius: 10px;
+}
+
 .service-link {
     display: block;
     color: #354A54;
