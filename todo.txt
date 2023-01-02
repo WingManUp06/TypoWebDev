@@ -11,3 +11,5 @@ To do:
 5. Fix the respondsive Navbar
 
 6. Create Web Pages
+
+7. Fix the landing page heading text 

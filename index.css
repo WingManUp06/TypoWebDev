@@ -25,7 +25,6 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    /* display: none; */
 }
 
 .navbar {
@@ -52,7 +51,6 @@ header {
     justify-content: space-around;
     align-self: center;
     gap: 45px;
-    /* width: fit-content; */
 }
 
 .nav-menu li {
@@ -66,27 +64,27 @@ header {
     text-decoration: none;
 }
 
-/*
-.nav-branding {
-    font-size: 2rem;
-} 
-*/
-
-.nav-link {
+.nav-link, .contact-btn {
     transition: 0.3s ease;
     display: block;
-    padding: 1rem 0;
+    padding: .7rem 0;
 }
 
 .nav-link:hover {
     color: #17b3e3;
+    text-decoration: underline;
 }
 
 .contact-btn {
     background-color: #17b3e3;
-    padding: 1rem;
+    padding: .7rem;
     border-radius: 10px;
     color: white;
+}
+
+.contact-btn:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .hamburger {
@@ -102,12 +100,6 @@ header {
     transition: all 0.3s ease-in-out;
     transform: all 0.3s ease-in-out;
     background-color: #333;
-}
-
-/* LANDING PAGE */
-
-main {
-    padding-top: 10vh;
 }
 
 @media (max-width: 768px) {
@@ -127,7 +119,6 @@ main {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-
     .nav-menu li {
         width: 100%;
     }
@@ -144,12 +135,9 @@ main {
         z-index: 1000;
     }
 
-
-    /* to change */
     .nav-item {
-        padding: 16px 0;
+        padding: 0;
     }
-
 
     .nav-link:hover {
         color: #fff;
@@ -163,11 +151,13 @@ main {
     .nav-menu.active {
         left: 0;
     }
-
+ 
     .contact-btn {
         background-color: #ffffff00;
     }
 }
+
+/* LANDING PAGE */
 
 main {
     padding-top: 10vh;
@@ -189,22 +179,20 @@ main {
 }
 
 .left h1 {
-    font-size: clamp(1rem, -0.7188rem + 5.5vw, 3.75rem);
+    font-size: clamp(2.1875rem, 0.8482rem + 3.5714vw, 3.75rem);
 }
 
 .left h2 {
-    font-size: clamp(0.875rem, -0.3359rem + 3.875vw, 2.8125rem);
+    font-size: clamp(1.6875rem, 0.7232rem + 2.5714vw, 2.8125rem);;
 }
 
 .left h3 {
-    font-size: clamp(0.75rem, -0.1484rem + 2.875vw, 2.1875rem);
+    font-size: clamp(1.25rem, 0.2857rem + 2.5714vw, 2.375rem);
 }
 
 .right {
     width: 100%;
 }
-
-/* Might Change This */
 
 .right img {
     width: 90%;
@@ -218,7 +206,15 @@ main {
     text-decoration: none;
     margin: 5px 0;
     border-radius: 5px;
+    transition: 0.3s;
 }
+
+.btn:hover {
+    color: #17b3e3;
+    text-decoration: underline;
+}
+
+/* WHY YOU NEED A WEBSITE */
 
 .section1 {
     background-color: #fff;
@@ -230,6 +226,7 @@ main {
     color: #00345B;
     text-align: center;
     width: 100%;
+    font-size: clamp(1.0625rem, -0.1696rem + 3.2857vw, 2.5rem);
 }
 
 .card-container1 {
@@ -247,6 +244,8 @@ main {
 .phone-image img {
     width: 100%;
 }
+
+/* Our Work */
 
 .our-work {
     background-color: #354A54;
@@ -292,17 +291,21 @@ main {
     font-size: 16px;
 }
 
-.work-item a {
-    color: #354A54;
-    text-decoration: none;
-    transition: .2s ease-in;
+.our-work-link {
     display: block;
+    color: #354A54;
+    padding: 5px 0 0 0;
+    transition: .3s;
 }
 
-.work-item a:hover {
-    text-decoration: underline;
-    color: #00345B;
+.our-work-link:hover {
+    color: #17b3e3;
 }
+
+.our-work-txt:hover ~ .fa-arrow-right {
+    translate: 10px;
+}
+
 
 .why-us {
     display: grid;
@@ -362,7 +365,7 @@ main {
     align-items: center;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 10px;
     gap: 50px
 
 }
@@ -393,6 +396,25 @@ main {
     width: 100%;
 }
 
+.service-link {
+    display: block;
+    color: #354A54;
+    padding: 5px 0 0 0;
+    transition: .3s;
+}
+
+.service-link:hover {
+    color: #17b3e3;
+}
+
+.fa-arrow-right {
+    transition: translate .3s;
+}
+
+.span-txt:hover ~ .fa-arrow-right {
+    translate: 10px;
+}
+
 /* FORM */
 /* INQUIRE */
 
@@ -400,8 +422,7 @@ main {
     background-color: #fff;
     display: grid;
     place-items: center;
-    /* width: 100%; */
-    /* height: 70vh; */
+
 }
 
 .inquire-container h2 {
@@ -417,15 +438,14 @@ main {
 }
 
 .form-container {
-    width: 30%;
+    width: 35%;
     display: block;
 }
 
 .form-container form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-
+    gap: 20px;
 }
 
 .form-container form input {
@@ -449,7 +469,8 @@ main {
 }
 
 footer {
-    height: 60vh;
+    padding: 10px 0;
+    height: fit-content;
     background-color: #354A54;
     color: white;
     display: flex;
@@ -460,6 +481,7 @@ footer {
 
 footer h1 {
     font-size: clamp(1.25rem, 0.4688rem + 2.5vw, 2.5rem);
+    padding: 5px 0;
 }
 
 .footer-list-container {
@@ -487,6 +509,16 @@ footer h1 {
 .list ul li a {
     text-decoration: none;
     color: white;
+    transition: .2s;
+}
+
+.list ul li a:hover {
+    text-decoration: underline;
+    color: #17b3e3;
+}
+
+footer h4 {
+    padding: 5px 8px;
 }
 
 /* MEDIA QUERIES */
@@ -498,14 +530,11 @@ footer h1 {
         gap: 10px;
         padding: 10px 10px;
     }
+
     .form-container {
         width: fit-content;
         display: block;
     }
-/*     
-    .inquire-container h2 {
-        font-size: 30px;
-    } */
 
     .why-us {
         grid-template-columns: 1fr;
@@ -519,6 +548,7 @@ footer h1 {
 
     .all-services {
         grid-template-columns: 1fr;
+        gap: 13px;
     }
 
     .service-b, .service-a {
@@ -543,36 +573,14 @@ footer h1 {
     .footer-list-container {
         grid-template-columns: repeat(2, 1fr);
     }
-/* 
-    footer {
-        height: 70vh;
-    } */
 
     .card-container1 {
         grid-template-columns: 1fr;
     }
-/* 
-    .form-container form {
-        display: flex;
-        flex-direction: column;
-        background-color: red;
-    } */
 
 }
 
 @media screen and (max-width: 400px) {
-    /* .form-container form input {
-        width: 30px;
-    } */
-/* 
-    .inquire-container h5 {
-        font-size: 12px;
-    } */
-
-    /* footer h1 {
-        font-size: 30px;
-    } */
-
     .stat-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -586,5 +594,14 @@ footer h1 {
 
         grid-template-columns: 1fr;
     }
+
+    .form-container form {
+        grid-template-columns: 1fr;
+    }
+
+    .textBox, .form-container form button {
+        grid-column: inherit;
+    }
+    
 }
 
