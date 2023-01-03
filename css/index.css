@@ -72,19 +72,19 @@ header {
 
 .nav-link:hover {
     color: #17b3e3;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .contact-btn {
     background-color: #17b3e3;
     padding: .7rem;
     border-radius: 10px;
-    color: white;
+    color: white !important;
 }
 
 .contact-btn:hover {
     color: white;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 .hamburger {
@@ -190,12 +190,8 @@ main {
     font-size: clamp(1.25rem, 0.2857rem + 2.5714vw, 2.375rem);
 }
 
-.right {
-    width: 100%;
-}
-
 .right img {
-    width: 90%;
+    width: 100%;
 }
 
 .btn {
@@ -367,7 +363,6 @@ main {
     margin: 0 auto;
     padding: 20px 10px;
     gap: 50px
-
 }
 
 .service-a, .service-b {
@@ -426,7 +421,6 @@ main {
     background-color: #fff;
     display: grid;
     place-items: center;
-
 }
 
 .inquire-container h2 {
@@ -581,7 +575,6 @@ footer h4 {
     .card-container1 {
         grid-template-columns: 1fr;
     }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -606,6 +599,5 @@ footer h4 {
     .textBox, .form-container form button {
         grid-column: inherit;
     }
-    
 }
 
