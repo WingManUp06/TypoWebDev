@@ -149,129 +149,88 @@ header {
 }
 
 main {
-    padding: 10vh 20px 0;
-    height: 100vh;
-    background-color: #00345B;
+    padding-top: 10vh;
+    background: #17b3e3;
+}
+
+main h1 {
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: clamp(1.25rem, 0.1786rem + 2.8571vw, 2.5rem);
+}
+
+.craft-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    gap: 50px;
+    padding: 20px;
 }
 
-.blue {
-    color: #17b3e3;
-    font-weight: bolder;
-} 
-
-.landing-left h1, .landing-left h3 {
-    color: white;
-}
-
-.landing-left {
-    padding: 1rem;
-}
-.landing-left h1 {
-    font-size: clamp(1.5625rem, 0.2232rem + 3.5714vw, 3.125rem);
-}
-
-.landing-left h3 {
-    font-size: clamp(1.125rem, -0.0536rem + 3.1429vw, 2.5rem);
-}
-
-.landing-left > * {
-    padding: 20px 0;
-}
-
-.btn {
-    padding: 12px 17px;
-    background-color: #fff;
-    display: block;
-    width: fit-content;
-    text-decoration: none;
-    margin: 5px 0;
-    border-radius: 5px;
-    transition: 0.3s;
-    color: #333;
-}
-
-.btn:hover {
-    color: #17b3e3;
-    text-decoration: underline;
-}
-
-.landing-right img {
-    max-width: 60%;
-    translate: 45%;
-    z-index: 1;
-}
-
-.add-radius {
+.craft-item {
+    background-color: white;
+    padding: 10px 20px;
     border-radius: 10px;
+}
+
+
+.craft-item img {
+    width: 100%;
+}
+
+.craft-item h2 {
+    font-size: clamp(1.25rem, 0.1786rem + 2.8571vw, 2.5rem);
+    padding: 7px 0;
+}
+
+.craft-item p {
+    font-size: clamp(1rem, 0.625rem + 1vw, 1.4375rem);
 }
 
 .container {
+    padding: 20px;
+    margin: 0 auto;
     max-width: 1080px;
-    margin: 0 auto;
 }
 
-.heading {
-    padding: 30px;
-    text-align: center;
-}
-
-.paragraph {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: clamp(1rem, 0.4643rem + 1.4286vw, 1.625rem);
-    padding: 20px 10px;
-}
-
-.large-p {
-    font-size: clamp(1rem, 0.4643rem + 1.4286vw, 1.625rem);
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px 10px;
-}
-
-.apart-heading {
-    padding: 10px;
-}
-
-.apart-item-container {
-    padding: 20px 0;
+.services-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    /* background-color: #111; */
-    max-width: 1080px;
-    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
-.apart-item {
-    color: #354A54;
-    padding: 10px;
+.services-item {
+    padding: 20px;
+    background-color: #17b3e3;
     border-radius: 10px;
-    /* background-color: #333; */
 }
 
-.apart-item i {
-    font-size: 30px;
-    color: #17b3e3;
-    padding: 7px;
-}
-
-.apart-item h2 {
-    color: #17b3e3;
+.services-item i {
+    font-size: clamp(1rem, 0.4107rem + 1.5714vw, 1.6875rem);
     padding: 5px 0;
+    /* color: #fff; */
 }
 
-.apart-item p {
-    font-size: 18px;
+.services-item h1 {
+    font-size: clamp(1rem, 0.4107rem + 1.5714vw, 1.6875rem);
+    padding: 5px 0;
+    /* color: #fff; */
 }
 
-.contact-button {
-    text-align: center;
+.services-item p {
+    font-size: clamp(1rem, 0.7857rem + 0.5714vw, 1.25rem);
+}
+
+/* LAST HEADING */
+
+.last-heading {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 75px 0;
 }
 
 .last-heading {
@@ -280,8 +239,13 @@ main {
     padding: 75px 0;
 }
 
+.heading {
+    padding: 30px;
+    text-align: center;
+}
+
 .last-heading h1 {
-    font-size: clamp(1.125rem, -0.0536rem + 3.1429vw, 2.5rem);
+    font-size: clamp(1.125rem, -0.0536rem + 3.1429vw, 2.5rem);    
 }
 
 .contact-button {
@@ -299,6 +263,8 @@ main {
 .contact-button:hover {
     scale: 1.2;
 }
+
+
 
 /* FOOTER */
 
@@ -361,17 +327,5 @@ footer h4 {
     .footer-list-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    .apart-item-container {
-        grid-template-columns: 1fr;
-    }
-
-    main {
-        grid-template-columns: 1fr;
-    }
-
-    .landing-right img {
-        max-width: 70%;
-        translate: 25%;
-    }
+    
 }
