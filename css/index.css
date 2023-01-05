@@ -153,7 +153,11 @@ header {
     }
  
     .contact-btn {
+        color: #444 !important;
         background-color: #ffffff00;
+        /* background-color: #333; */
+        /* width: fit-content; */
+        /* margin: 0 auto; */
     }
 }
 

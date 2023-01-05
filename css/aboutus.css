@@ -144,6 +144,7 @@ header {
     }
  
     .contact-btn {
+        color: #444 !important;
         background-color: #ffffff00;
     }
 }
@@ -258,7 +259,7 @@ main {
 .apart-item i {
     font-size: 30px;
     color: #17b3e3;
-    padding: 7px;
+    padding: 7px 0;
 }
 
 .apart-item h2 {
