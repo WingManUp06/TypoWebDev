@@ -15,7 +15,6 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100%;
-    display: grid;
 }
 
 /* NAVBAR */
@@ -196,6 +195,8 @@ main {
 
 .right img {
     width: 100%;
+    display: block;
+    /* aspect-ratio: 16/9; */
 }
 
 .btn {
@@ -239,6 +240,7 @@ main {
 
 .paragraph-text p {
     max-width: 600px;
+    font-size: clamp(1rem, 0.5714rem + 1.1429vw, 1.5rem);
 }
 
 .phone-image img {
@@ -324,6 +326,9 @@ main {
     align-items: center;
     gap: 30px;
 }
+.why-us-txt p {
+    font-size: clamp(1rem, 0.7857rem + 0.5714vw, 1.25rem);
+}
 
 .stat-container {
     display: grid;
@@ -342,10 +347,11 @@ main {
     width: 100%;
     display: grid;
     place-items: center;
+    white-space: nowrap;
 }
 
 .stat-num {
-    font-size: 30px;
+    font-size: 3rem;
     color: #00345B;
 }
 
@@ -524,10 +530,16 @@ footer h4 {
 }
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 1300px){
+    .why-us {
+        grid-template-columns: 1fr;
+        /* width: 100%; */
+    }
+}
+
 
 @media screen and (max-width: 1000px) {
     .our-work-container {
-
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 10px 10px;
@@ -537,13 +549,14 @@ footer h4 {
         width: fit-content;
         display: block;
     }
-
-    .why-us {
-        grid-template-columns: 1fr;
-    }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
+
+    .stat-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .service-img-a, .service-img-b {
         display: none;
     }
@@ -561,6 +574,10 @@ footer h4 {
 
 @media screen and (max-width: 600px) {
     main {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-container {
         grid-template-columns: 1fr;
     }
 
@@ -582,14 +599,14 @@ footer h4 {
 }
 
 @media screen and (max-width: 400px) {
-    .stat-container {
+    /* .stat-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         width: 100%;
         justify-items: center;
         align-items: center;
         gap: 10px;
-    }
+    } */
 
     .our-work-container {
 

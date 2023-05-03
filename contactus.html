@@ -58,17 +58,17 @@
 
     <main class="container">
         <h1>There are multiple ways to contact us</h1>
-        <h2>Email us at: <a href="mailto:dajuan@typowebdev.com">dajuan@typowebdev.com</a></h2>
-        <h2>Send me a message on Fiverr: <a href="https://www.fiverr.com/wingmanup" target="_blank">Here</a></h2>
+        <h2>Email us at: <a href="mailto:dajuan@typowebdev.com"><span class="blue">dajuan@typowebdev.com</span></a></h2>
+        <h2>Send me a message on Instagram: <a href="https://www.instagram.com/typowebdev/" target="_blank"><span class="blue">Here</span></a></h2>
         <div class="inquire-container">
             <h2>Tell Us How We Can Help</h2>
-            <h5>Fill Out and send this form. Our Sales team will contact promptly</h5>
+            <h5><span class="blue">Fill Out and send this form. Our Sales team will contact promptly.</span></h5>
             <div class="form-container">
-                <form action="PUT">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                    <input type="email" placeholder="Email">
-                    <input type="text" placeholder="Company Name">
+                <form action="/contact" method="POST">
+                    <input type="text" name="name" placeholder="First Name">
+                    <input type="text" name="name" placeholder="Last Name">
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="text" name="name" placeholder="Company Name">
                     <textarea class="textBox" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                     <button>Submit</button>
                 </form>
