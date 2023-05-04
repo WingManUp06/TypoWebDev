@@ -1,0 +1,29 @@
+{
+  "name": "typowebdev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WingManUp06/TypoWebDev.git"
+  },
+  "keywords": [
+    "TWD"
+  ],
+  "author": "DJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WingManUp06/TypoWebDev/issues"
+  },
+  "homepage": "https://github.com/WingManUp06/TypoWebDev#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
