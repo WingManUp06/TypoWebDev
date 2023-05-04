@@ -40,22 +40,19 @@ async function sendEmail(fname, lname, email, companyName, message){
       user: "responder44@outlook.com", 
       pass: "1lovenode3",
     },
-    from: "aaa",
+    from: "responder44@outlook.com",
   });
 
   // send mail with defined transport object
   let info = await transporter.sendMail({
     from: "responder44@outlook.com", // sender address
     to: "dajuan@typowebdev.com", // list of receivers
-    subject: `${date} New Inquiry`, // Subject line
+    subject: `New Inquiry! - ${date}`, // Subject line
     text: emailContent // plain text body
   });
 
-
-
 //   console.log("Message sent: %s", info.messageId);
 //   // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
 }
 
 app.listen(3000)
